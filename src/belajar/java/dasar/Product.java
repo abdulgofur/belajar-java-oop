@@ -9,6 +9,10 @@ public class Product {
     this.price = price;
   }
 
+  public String toString() {
+    return "Product [name=" + name + ", price=" + price + "]";
+  }
+
 }
 
 
