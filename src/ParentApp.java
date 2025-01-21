@@ -6,7 +6,7 @@ public class ParentApp {
     child.doIt();
     System.out.println(child.name);
 
-    Parent parent = (Parent) child;
+    Parent parent = child;
     parent.name = "Gofur";
     parent.doIt();
     System.out.println(parent.name);
