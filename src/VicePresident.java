@@ -1,4 +1,4 @@
-public class VicePresident extends Manager{
+class VicePresident extends Manager{
   VicePresident(String name, String company){
     super(name,company);
   }

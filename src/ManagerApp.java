@@ -5,5 +5,6 @@ public class ManagerApp {
 
     var vicepresident = new VicePresident("Abdul3", "Prudential");
     vicepresident.sayHello("Abdul4");
+
   }
 }
