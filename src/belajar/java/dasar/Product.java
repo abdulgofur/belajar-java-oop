@@ -1,5 +1,7 @@
 package belajar.java.dasar;
 
+import java.util.Objects;
+
 public class Product {
   public String name;
   public int price;
@@ -13,6 +15,39 @@ public class Product {
     return "Product [name=" + name + ", price=" + price + "]";
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (o == null || getClass() != o.getClass()) return false;
+
+    Product product = (Product) o;
+    return price == product.price && Objects.equals(name, product.name);
+  }
+
+//  @Override
+//  public int hashCode() {
+//    int result = Objects.hashCode(name);
+//    result = 31 * result + price;
+//    return result;
+//  }
+
+  /*public boolean equals(Object o) {
+    if (o == this) {
+      return true;
+    }
+    if (!(o instanceof Product)) {
+      return false;
+    }
+    Product p = (Product) o;
+    if ( this.price != p.price) {
+      return false;
+    }
+
+    if ( this.name != null ) {
+      return this.name.equals(p.name);
+    } else {
+      return p.name == null;
+    }
+  }*/
 }
 
 
