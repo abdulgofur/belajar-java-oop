@@ -1,6 +1,6 @@
 package belajar.java.application;
 
-import belajar.java.dasar.Product;
+ import belajar.java.dasar.Product;
 
 public class Application {
   public static void main(String[] args) {
