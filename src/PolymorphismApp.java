@@ -14,6 +14,16 @@ public class PolymorphismApp {
     sayHello(new VicePresident("JAMAL", "PRUDENTIAL"));
   }
   static void sayHello(Employee employee) {
-    System.out.println("Hai " + employee.nama);
+    if (employee instanceof VicePresident) {
+      VicePresident v = (VicePresident) employee;
+      System.out.println("Hai VicePresident " + v.nama);
+    } else if (employee instanceof Manager) {
+      Manager m = (Manager) employee;
+      System.out.println("Hai Manager " + m.nama);
+    } else if (employee instanceof Employee) {
+      Employee e = (Employee) employee;
+      System.out.println("Hai Employee " + e.nama);
+    }
+
   }
 }
