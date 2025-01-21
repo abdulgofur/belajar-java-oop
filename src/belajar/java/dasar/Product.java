@@ -23,12 +23,12 @@ public class Product {
     return price == product.price && Objects.equals(name, product.name);
   }
 
-//  @Override
-//  public int hashCode() {
-//    int result = Objects.hashCode(name);
-//    result = 31 * result + price;
-//    return result;
-//  }
+  /*@Override
+  public int hashCode() {
+    int result = Objects.hashCode(name);
+    result = 31 * result + price;
+    return result;
+  }*/
 
   /*public boolean equals(Object o) {
     if (o == this) {
