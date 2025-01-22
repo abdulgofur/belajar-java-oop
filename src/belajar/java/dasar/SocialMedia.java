@@ -12,7 +12,7 @@ class Facebook extends SocialMedia {
 }
 
 class Twitter extends Facebook {
-  void login( String username, String password) {
-//    isi method
-  }
+//  void login( String username, String password) {
+////    isi method
+//  }
 }
