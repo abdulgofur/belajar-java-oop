@@ -2,12 +2,17 @@ package belajar.java.dasar;
 
 class SocialMedia {
   String nama;
-}
-
-final class Facebook extends SocialMedia {
 
 }
-//ERROR
-//class Twitter extends Facebook {
-//
-//}
+
+class Facebook extends SocialMedia {
+  final void login( String username, String password) {
+//    isi method
+  }
+}
+
+class Twitter extends Facebook {
+  void login( String username, String password) {
+//    isi method
+  }
+}
